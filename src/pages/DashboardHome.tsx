@@ -6,7 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { mockHashtags, mockSocialPost, mockHighAlerts, mockResources } from "@/data/mockData";
 import { toast } from "sonner";
-import indiaMap from "@/assets/india-map.png";
+import indiaMap from "../assets/india-map.png";
 
 const weatherInfo = { temp: 32, humidity: 70, wind: 11, condition: "Partly Cloudy" };
 
