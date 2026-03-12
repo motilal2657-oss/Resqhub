@@ -67,16 +67,17 @@ const DashboardHome = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Map Placeholder */}
-        <div className="lg:col-span-2 bg-card rounded-xl card-shadow overflow-hidden">
-          <div className="p-4 border-b border-border">
-            <h2 className="font-semibold text-card-foreground">India Flood Monitoring Map</h2>
-          </div>
-          <div className="h-[400px] bg-muted flex items-center justify-center relative">
+    <div className="h-[400px] bg-muted flex items-center justify-center relative">
   <img
     src={indiaMap}
     alt="India Flood Map"
-    className="h-full w-full object-contain"
+    className="w-full h-full object-contain"
   />
+
+  <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-destructive rounded-full animate-pulse"></div>
+  <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-warning rounded-full animate-pulse"></div>
+  <div className="absolute bottom-1/3 left-1/2 w-3 h-3 bg-destructive rounded-full animate-pulse"></div>
+</div>
 
   {/* Example alert markers */}
   <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-destructive rounded-full animate-pulse" />
