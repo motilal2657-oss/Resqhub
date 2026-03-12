@@ -6,6 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { mockHashtags, mockSocialPost, mockHighAlerts, mockResources } from "@/data/mockData";
 import { toast } from "sonner";
+import indiaMap from "@/assets/india-map.png";
 
 const weatherInfo = { temp: 32, humidity: 70, wind: 11, condition: "Partly Cloudy" };
 
@@ -71,6 +72,17 @@ const DashboardHome = () => {
             <h2 className="font-semibold text-card-foreground">India Flood Monitoring Map</h2>
           </div>
           <div className="h-[400px] bg-muted flex items-center justify-center relative">
+  <img
+    src={indiaMap}
+    alt="India Flood Map"
+    className="h-full w-full object-contain"
+  />
+
+  {/* Example alert markers */}
+  <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-destructive rounded-full animate-pulse" />
+  <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-warning rounded-full animate-pulse" />
+  <div className="absolute bottom-1/3 left-1/2 w-3 h-3 bg-destructive rounded-full animate-pulse" />
+</div>
             <div className="text-center">
               <MapPin className="w-16 h-16 text-primary/30 mx-auto mb-3" />
               <p className="text-lg font-semibold text-muted-foreground">India Flood Monitoring Map Placeholder</p>
