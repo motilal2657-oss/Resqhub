@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 215 80% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 30% 93%;
+    --secondary-foreground: 215 25% 20%;
+
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 15% 50%;
+
+    --accent: 200 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 215 80% 48%;
+
+    --radius: 0.75rem;
+
+    --sidebar-bg: 215 50% 18%;
+    --sidebar-fg: 210 20% 90%;
+    --sidebar-accent: 215 60% 28%;
+    --sidebar-accent-fg: 0 0% 100%;
+    --sidebar-muted: 215 40% 35%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --success: 142 72% 40%;
+    --success-foreground: 0 0% 100%;
+    --info: 200 80% 50%;
+    --info-foreground: 0 0% 100%;
+
+    --landing-bg: 215 70% 42%;
+    --landing-fg: 0 0% 100%;
+
+    --shadow-card: 0 4px 20px -4px hsl(215 50% 18% / 0.08);
+    --shadow-card-hover: 0 8px 30px -4px hsl(215 50% 18% / 0.15);
+
+    --sidebar-background: 215 50% 18%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 215 80% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 60% 28%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 215 40% 25%;
+    --sidebar-ring: 215 80% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+  .card-shadow-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+}
